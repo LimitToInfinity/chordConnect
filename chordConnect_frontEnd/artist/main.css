@@ -287,11 +287,22 @@ p {
     border-bottom: #136b9b;
     border-bottom-style: solid;
     border-bottom-width: 1.3px;
+    caret-color: #136b9b;
     outline: none;
     outline-color: none;
     outline-style: none;
     outline-width: none;
     transition: all 0.4s;
+}
+
+#update-venue-name-input {
+    height: 2rem;
+    padding-top: 0;
+}
+
+#update-venue-description-input {
+    height: 2rem;
+    line-height: 1.6rem;
 }
 
 .venue-name-label {
@@ -313,11 +324,12 @@ p {
 }
 
 .shrink {
-    color: hsl(201, 98%, 35%);
+    color: #136b9b;
     font-size: 0.6rem;
     text-shadow: 0.02px 0.02px 0.5px hsl(0, 0%, 98%), -0.02px 0.02px 0.5px hsl(0, 0%, 98%), 0.02px -0.02px 0.5px hsl(0, 0%, 98%), -0.02px -0.02px 0.5px hsl(0, 0%, 98%);
     transform: translateY(-8px);
     transition: all 0.4s;
+    z-index: 2;
 }
 
 .new-venue-form-container, .update-venue-form-container {

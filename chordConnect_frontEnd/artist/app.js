@@ -142,8 +142,8 @@ function postLoad() {
 
         const updateVenueFormHolder = document.querySelector(".update-venue-form-container");
         updateVenueFormHolder.innerHTML = `<form class="update-venue-form">
-            <input type="text" name="update-venue-name" class="venue-name-input" value="${venueName}"/>
-            <textarea type="text" name="update-venue-description" class="venue-description-input">${venueDescription}</textarea>
+            <input type="text" name="update-venue-name" class="venue-name-input" id="update-venue-name-input" value="${venueName}"/>
+            <textarea type="text" name="update-venue-description" class="venue-description-input" id="update-venue-description-input">${venueDescription}</textarea>
             <input class="update-venue-form-submit" value="&#xf040;" data-venue-id="${venueId}"  type="submit"/>
             </form>`;
     }
