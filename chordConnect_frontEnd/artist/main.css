@@ -254,7 +254,8 @@ p {
 .venue-name-input {
     border: none;
     background-color: rgba(235, 235, 235, 0.221);
-    padding-left: 0.7rem;
+    padding-top: 1.2rem;
+    padding-left: 0.5rem;
     border-top-left-radius: 4%;
     border-top-right-radius: 4%;
     border-bottom: hsla(197, 3%, 53%, 0.386);
@@ -262,7 +263,6 @@ p {
     border-bottom-width: 1.3px;
     width: 150px;
     height: 44px;
-    padding-top: 1.2rem;
     z-index: 1;
 }
 
@@ -298,11 +298,13 @@ p {
 #update-venue-name-input {
     height: 2rem;
     padding-top: 0;
+    padding-left: 0.7rem;
 }
 
 #update-venue-description-input {
     height: 2rem;
     line-height: 1.6rem;
+    padding-left: 0.9rem;
 }
 
 .venue-name-label {
