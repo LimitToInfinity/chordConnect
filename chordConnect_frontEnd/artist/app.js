@@ -59,7 +59,7 @@ function postLoad() {
     }
 
     function removeNameShrinkClass() {
-        if (newVenueNameInput.selectionEnd < 1) {
+        if (!newVenueNameInput.value) {
         newVenueNameLabel.classList.remove("shrink")
         }
     }
@@ -69,7 +69,7 @@ function postLoad() {
     }
 
     function removeDescriptionShrinkClass() {
-        if (newVenueDescriptionInput.textLength < 1) {
+        if (!newVenueDescriptionInput.value) {
             newVenueDescriptionLabel.classList.remove("shrink")
         }
     }
