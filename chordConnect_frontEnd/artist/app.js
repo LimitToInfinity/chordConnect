@@ -55,22 +55,32 @@ function postLoad() {
     }
 
     function addNameShrinkClass() {
-        newVenueNameLabel.classList.add("shrink")
+        newVenueNameLabel.classList.remove("shrink-uncolored");
+        newVenueNameLabel.classList.add("shrink-colored");
     }
 
     function removeNameShrinkClass() {
         if (!newVenueNameInput.value) {
-        newVenueNameLabel.classList.remove("shrink")
+            newVenueNameLabel.classList.remove("shrink-colored");
+            newVenueNameLabel.classList.remove("shrink-uncolored");
+        } else {
+            newVenueNameLabel.classList.remove("shrink-colored");
+            newVenueNameLabel.classList.add("shrink-uncolored");
         }
     }
 
     function addDescriptionShrinkClass() {
-        newVenueDescriptionLabel.classList.add("shrink")
+        newVenueDescriptionLabel.classList.remove("shrink-uncolored");
+        newVenueDescriptionLabel.classList.add("shrink-colored");
     }
 
     function removeDescriptionShrinkClass() {
         if (!newVenueDescriptionInput.value) {
-            newVenueDescriptionLabel.classList.remove("shrink")
+            newVenueDescriptionLabel.classList.remove("shrink-colored");
+            newVenueDescriptionLabel.classList.remove("shrink-uncolored");
+        } else {
+            newVenueDescriptionLabel.classList.remove("shrink-colored");
+            newVenueDescriptionLabel.classList.add("shrink-uncolored");
         }
     }
 

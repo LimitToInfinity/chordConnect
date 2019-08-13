@@ -256,8 +256,8 @@ p {
     background-color: rgba(235, 235, 235, 0.221);
     padding-top: 1.2rem;
     padding-left: 0.5rem;
-    border-top-left-radius: 4%;
-    border-top-right-radius: 4%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     border-bottom: hsla(197, 3%, 53%, 0.386);
     border-bottom-style: solid;
     border-bottom-width: 1.3px;
@@ -269,8 +269,8 @@ p {
 .venue-description-input {
     border: none;
     background-color: rgba(235, 235, 235, 0.221);
-    border-top-left-radius: 4%;
-    border-top-right-radius: 4%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     border-bottom: hsla(197, 3%, 53%, 0.386);
     border-bottom-style: solid;
     border-bottom-width: 1.3px;
@@ -282,6 +282,13 @@ p {
     z-index: 1;
 }
 
+.venue-name-input:hover, .venue-description-input:hover {
+    background-color: rgba(228, 228, 228, 0.35);
+    border-bottom: #333;
+    border-bottom-style: solid;
+    border-bottom-width: 1.3px;
+  }
+
 .venue-name-input:focus, .venue-description-input:focus {
     background-color: rgba(216, 216, 216, 0.6);
     border-bottom: #136b9b;
@@ -289,10 +296,7 @@ p {
     border-bottom-width: 1.3px;
     caret-color: #136b9b;
     outline: none;
-    outline-color: none;
-    outline-style: none;
-    outline-width: none;
-    transition: all 0.4s;
+    transition: all 0.3s;
 }
 
 #update-venue-name-input {
@@ -313,7 +317,7 @@ p {
     font-size: 0.7rem;
     color: rgb(72, 72, 72);
     font-family: Roboto, sans-serif;
-    transition: all 0.4s;
+    transition: all 0.3s;
 }
 
 .venue-description-label {
@@ -322,16 +326,20 @@ p {
     font-size: 0.7rem;
     color: rgb(72, 72, 72);
     font-family: Roboto, sans-serif;
-    transition: all 0.4s;
+    transition: all 0.3s;
 }
 
-.shrink {
+.shrink-colored {
     color: #136b9b;
     font-size: 0.6rem;
-    text-shadow: 0.02px 0.02px 0.5px hsl(0, 0%, 98%), -0.02px 0.02px 0.5px hsl(0, 0%, 98%), 0.02px -0.02px 0.5px hsl(0, 0%, 98%), -0.02px -0.02px 0.5px hsl(0, 0%, 98%);
     transform: translateY(-8px);
-    transition: all 0.4s;
+    transition: all 0.3s;
     z-index: 2;
+}
+
+.shrink-uncolored {
+    font-size: 0.6rem;
+    transform: translateY(-8px);
 }
 
 .new-venue-form-container, .update-venue-form-container {
